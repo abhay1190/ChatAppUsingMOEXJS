@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">ChatApp</div>
+            <nav class="nav">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Messages</a>
+                <a href="#">Friends</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="header">
+                <div>
+                    <h2>Dashboard</h2>
+                    <p class="user">Hello, Alex 👋</p>
+                </div>
+                <button>+ New Chat</button>
+            </div>
+
+            <section class="cards">
+                <div class="card">
+                    <h3>Active Chats</h3>
+                    <p>12</p>
+                </div>
+                <div class="card">
+                    <h3>New Messages</h3>
+                    <p>4</p>
+                </div>
+                <div class="card">
+                    <h3>Online Friends</h3>
+                    <p>8</p>
+                </div>
+            </section>
+
+            <section class="content-grid">
+                <div class="panel">
+                    <h3>Recent Conversations</h3>
+                    <div class="chat-item">
+                        <div>
+                            <strong>Mia</strong>
+                            <span>Let’s meet at 6 PM</span>
+                        </div>
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="chat-item">
+                        <div>
+                            <strong>Daniel</strong>
+                            <span>Shared the project files</span>
+                        </div>
+                        <span class="badge">Ready</span>
+                    </div>
+                    <div class="chat-item">
+                        <div>
+                            <strong>Sophia</strong>
+                            <span>Can you review this?</span>
+                        </div>
+                        <span class="badge">3 msgs</span>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">You joined a new room.</div>
+                        <div class="activity-item">2 new friend requests.</div>
+                        <div class="activity-item">Your profile was updated.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp | Login</title>
+    <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-    <h1>Login</h1>
-    <input type="text" placeholder="Username" id="username">
-    <input type="password" placeholder="Password" id="password">
-    <button>Login</button>
-    <p>New Then <a href="signup.html">SignUp</a></p>
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="brand">
+                <h1>Welcome back</h1>
+                <p>Sign in to continue chatting with your friends.</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+                <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+
+            <p class="signup-link">
+                New here? <a href="../Signup/signup.html">Create an account</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 </html>
