@@ -10,9 +10,19 @@ form.addEventListener('submit', function (event) {
     if (!username || !password) {
         message.textContent = 'Please enter both username and password.';
         message.style.color = '#fda4af';
+        console.log(event);
         return;
     }
 
-    message.textContent = `Welcome back, ${username}!`;
-    message.style.color = '#86efac';
+    if (username === 'admin' && password === 'admin123') {
+        console.log(event);
+        alert('Login successful! Redirecting to dashboard...');
+        window.location.href = '../DashBoard/dashboard.html';
+    } else {
+        message.textContent = 'Invalid username or password.';
+        message.style.color = '#fda4af';
+    }
+
+    // message.textContent = `Welcome back, ${username}!`;
+    // message.style.color = '#86efac';
 });
