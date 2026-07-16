@@ -8,7 +8,7 @@
                     <a href="#" class="active">Overview</a>
                     <a href="#">Messages</a>
                     <a href="#">Friends</a>
-                    <a href="#">Settings</a>
+                    <a href="http://localhost:3000/setting">Settings</a>
                 </nav>
             </aside>
 
@@ -16,7 +16,7 @@
                 <div class="header">
                     <div>
                         <h2>Dashboard</h2>
-                        <p class="user">Hello, <%= user %> 👋</p>
+                        <p class="user">Hello, <%= user.username %> 👋</p>
                     </div>
                     <button>+ New Chat</button>
                 </div>
@@ -74,7 +74,6 @@
             </main>
         </div>
         <%- include("includes/footer.ejs") %>
-            <script src="dashboard.js"></script>
     </body>
 
     </html>

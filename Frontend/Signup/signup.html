@@ -14,7 +14,7 @@
                 <p>Join ChatApp and start connecting with people instantly.</p>
             </div>
 
-            <form id="signupForm" class="signup-form">
+            <form id="signupForm" class="signup-form" method="post" action="http://localhost:3000/signup">
                 <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
 
@@ -32,11 +32,11 @@
             </form>
 
             <p class="login-link">
-                Already have an account? <a href="../Login/login.html">Login</a>
+                Already have an account? <a href="http://localhost:3000/">Login</a>
             </p>
         </div>
     </div>
 
-    <script src="signup.js"></script>
+    <!-- <script src="signup.js"></script> -->
 </body>
 </html>
